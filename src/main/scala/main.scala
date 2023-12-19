@@ -4,7 +4,7 @@ import org.db2del.*
 def main(): Unit = {
   val option: AppOptions = AppOptions("hello.del", Set(5))
   
-  val reader = new Reader(option)
+  val reader = new DelReader(option)
   val writer = new NoopWriter(option)
   reader.iterator(writer.write)
 }

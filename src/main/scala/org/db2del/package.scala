@@ -1,5 +1,3 @@
 package org
 
-package object db2del {
-
-}
+package object db2del
